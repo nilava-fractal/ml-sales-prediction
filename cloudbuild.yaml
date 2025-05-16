@@ -26,6 +26,7 @@ steps:
         '--platform', 'managed',
         '--allow-unauthenticated',
         '--set-env-vars', 'VERSION=$SHORT_SHA'
+        '--timeout', '600s'
       ]
     id: 'Deploy to Cloud Run'
 
